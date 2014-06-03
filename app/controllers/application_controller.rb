@@ -23,7 +23,7 @@ class ApplicationController < ActionController::Base
   def set_online
     if !!current_user
       # не нужно значение, нужен только ключ
-        $redis_onlines.set( current_user.id, nil, ex: 10*60 )
+        $redis_onlines.set( current_user.id, nil, ex: 1 )
       # `ex: 10*60` - устанавливаем время жизни ключа - 10 минут, через 10 мину ключ удалиться
     end
   end

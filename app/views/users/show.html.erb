@@ -6,7 +6,7 @@
         <h3>Name: <%= @user.name if @user.name %></h3>
         <p>Data of registration: <%= @user.created_at%></p>
         <p>About me: <%= @user.about%></p>
-        <p><%=link_to("Edit Information", edit_user_path(@user), class: "btn btn-primary", role: "button")%></p>
+        <p><%=link_to("Edit Information", edit_user_registration_path, class: "btn btn-primary", role: "button")%></p>
       </div>
     </div>
   </div>
