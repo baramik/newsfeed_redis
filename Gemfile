@@ -13,6 +13,14 @@ gem 'bootstrap-sass'
 gem 'devise'
 gem 'pg'
 gem 'simple_form'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'omniauth-vkontakte'
+gem "font-awesome-rails"
+gem 'bootstrap-generators'
+gem 'will_paginate'
+gem 'redis'
+gem 'hiredis' 
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_20]
@@ -30,4 +38,7 @@ group :test do
   gem 'faker'
   gem 'launchy'
   gem 'selenium-webdriver'
+end
+group :production do
+  gem 'rails_12factor'
 end

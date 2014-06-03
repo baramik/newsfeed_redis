@@ -1,0 +1,22 @@
+
+<center>
+  <h1>Listing news_feeds</h1>
+</center>
+<% @news_feeds.each do |news_feed| %>      
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title"><%= news_feed.title %></h2>
+        </div>
+        <div class="panel-body">
+          <p><%= news_feed.text %></p>
+        </div>
+        <div class="panel-footer">
+          <p>Created at: <%= news_feed.created_at%></p>
+          <p><%= link_to 'Show details', news_feed %></p>
+        </div>
+      </div>  
+    </div>
+</div>
+<% end %>
+
