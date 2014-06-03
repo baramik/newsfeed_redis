@@ -21,5 +21,5 @@
 
 # $redis_onlines = Redis.new(:port => port)
 
-uri = URI.parse(ENV["REDISTOGO_URL"])
-$redis_onlines = Redis.new(:url => ENV["REDISTOGO_URL"])
+# uri = URI.parse(ENV["REDISTOGO_URL"])
+# $redis_onlines = Redis.new(:url => ENV["REDISTOGO_URL"])
