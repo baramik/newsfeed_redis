@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20140602234508) do
   create_table "news_feeds", force: true do |t|
     t.string   "title"
     t.text     "text"
-    t.string   "tagname",    default: "untagged"
+    t.string   "tagname"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
