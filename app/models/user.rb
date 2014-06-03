@@ -29,5 +29,4 @@ class User < ActiveRecord::Base
   def online?
     $redis_onlines.exists( self.id )
   end
-
 end
