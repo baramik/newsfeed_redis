@@ -21,5 +21,6 @@
   <li><%= link_to 'Sign in', new_user_session_path %></li>
   <li><%= link_to 'Sign up', new_user_registration_path %></li>
   <li><%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %><li>
+  <li>><%= link_to "Online users: #{all_who_are_in_touch}", root_path %></li>
 <% end %>
   

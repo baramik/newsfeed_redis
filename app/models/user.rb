@@ -26,7 +26,7 @@ class User < ActiveRecord::Base
     end
   end 
 
-  # def online?
-  #   $redis_onlines.exists( self.id )
-  # end
+  def online?
+    $redis_onlines.exists( self.id )
+  end
 end
